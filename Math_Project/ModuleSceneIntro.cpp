@@ -44,7 +44,7 @@ update_status ModuleSceneIntro::Update(float dt)
 	cube.SetPos(-2,0,0);
 	
 
-	if (App->input->GetKey(SDL_SCANCODE_W)) rotation++;
+	if (App->input->GetKey(SDL_SCANCODE_W) == KEY_REPEAT) rotation += 20;
 
 	cube.SetRotation(rotation, rotation);
 
