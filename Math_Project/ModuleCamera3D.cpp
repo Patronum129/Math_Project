@@ -37,6 +37,9 @@ bool ModuleCamera3D::CleanUp()
 // -----------------------------------------------------------------
 update_status ModuleCamera3D::Update(float dt)
 {
+
+
+	/*
 	vec3 newPos(0, 0, 0);
 	float speed = 3.0f * dt;
 	// OnKeys WASD keys -----------------------------------
@@ -97,9 +100,11 @@ update_status ModuleCamera3D::Update(float dt)
 
 		Position = Reference + Z * length(Position);
 	}
+	*/
 
 	// Recalculate matrix -------------
 	CalculateViewMatrix();
+	
 
 	return UPDATE_CONTINUE;
 }
